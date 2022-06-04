@@ -3,6 +3,8 @@ var add=function(a,b) //anonymous func
     return a+b;
 }
 
+console.log(add(5,6));
+
 var sub=function(a,b) //anonmyous func
 {
     return a-b;
@@ -27,7 +29,7 @@ console.log(opt(sub));
  //console.log(mul); => error
  console.log(mutliply(7,2));
 
- function ab(a,b,compute)
+function ab(a,b,compute)
 {
     return compute(a,b);
 }
@@ -38,3 +40,9 @@ function multi(a,b)
 }
 
 console.log(ab(10,2,multi))
+
+
+console.log(ab(10,2,mutliply))
+
+
+console.log(ab(10,2,add))

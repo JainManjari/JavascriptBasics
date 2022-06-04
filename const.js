@@ -6,8 +6,8 @@ Cannot be reassigned.
 Block Scope
 It can be assign on the variable on declaration line.
 Primitive value.
-The property of a const object can be change but it cannot be change to reference to the new object
-The values inside the const array can be change, it can add new items to const arrays but it cannot reference to a new array.
+The property of a const object can be change but it cannot be changed to refer to the new object
+The values inside the const array can be change, it can add new items to const arrays but it cannot refer to a new array.
 Re-declaring of a const variable inside different block scope is allowed.
 Cannot be Hoisted.
 Create only read only reference to value.
@@ -83,9 +83,19 @@ const student={
     "dob":"16-10-1998"
 }
 
+//changing value
 student["name"]="music";
+//adding new key
+student["work"]="engineer";
 
 console.log(student.name);
+
+
+student["name2"]=student["name"];
+//removng old key
+delete student["name"]
+
+console.log(JSON.stringify(student));
 
 // const student={
 //     "music":"songs"
