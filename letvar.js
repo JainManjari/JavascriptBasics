@@ -35,8 +35,9 @@ console.log("let a3 "+a3);
 
 
 
-
-
+let a4;
+a4=90;
+console.log("let a4 "+a4);
 
 
 

@@ -1,5 +1,6 @@
 /*
-   localStorage stores the items in the form of JSON String => "[{\"id\":1,\"text\":\"hello\"},{\"id\":2,\"text\":\"he3lo\"},{\"id\":3,\"text\":\"llo\"}]
+   localStorage stores the items in the form of JSON String => 
+   "[{\"id\":1,\"text\":\"hello\"},{\"id\":2,\"text\":\"he3lo\"},{\"id\":3,\"text\":\"llo\"}]
    to convert this string to an object we use JSON parse
 
    localStorage.clear() => to clear localStorage
@@ -32,6 +33,7 @@ localStorage.setItem("comments",JSON.stringify(comments));
 
 console.log(localStorage.getItem("comments"));
 
-localStorage.removeItem("comments");
+//localStorage.removeItem("comments");
+//localStorage.clear();
 
 console.log(localStorage.getItem("comments"));
