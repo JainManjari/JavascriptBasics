@@ -18,7 +18,7 @@ Person.prototype.getName=function() // same for the getName func *
 
 Person.prototype.lastName="jain"; // here all objects will have lastName as Jain but it will not be reflected in their actual obj body *
 
-console.log("proto "+Person.prototype);
+console.log("proto "+JSON.stringify(Person.prototype));
 
 console.log("func "+Person.prototype.constructor);
 

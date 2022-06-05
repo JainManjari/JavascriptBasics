@@ -1,33 +1,33 @@
-// // function Person(name)
-// // {
-// //     var obj={}// new Object();
-// //     obj.name=name;
-// //     return obj;
-// // }
+// function Person(name)
+// {
+//     var obj={}// new Object();
+//     obj.name=name;
+//     return obj;
+// }
 
-// // var p1=Person("mj");
-// // var p2=Person("rj");
+// var p1=Person("mj");
+// var p2=Person("rj");
 
-// // console.log(p1);
+// console.log(p1);
 
-// // console.log(p2);
-
-
+// console.log(p2);
 
 
 
 
-// // function Person(name)
-// // {
-// //     this.name=name;
-// // }
 
-// // var p1=Person("mj"); //undefined
-// // var p2=new Person("rj"); //"new"=> created new object and return it
 
-// // console.log(p1);
+// function Person(name)
+// {
+//     this.name=name;
+// }
 
-// // console.log(p2);
+// var p1=Person("mj"); //undefined
+// var p2=new Person("rj"); //"new"=> created new object and return it
+
+// console.log(p1);
+
+// console.log(p2);
 
 
 
@@ -62,25 +62,29 @@
 
 // const test=function()
 // {
-//     console.log(x);
+//     console.log(x); // error becuz cannot access x before initialization
 //    let x=21;
 // }
 
 // test();
 
-// function add()
-// {
-//     return () => {return arguments[0]+arguments[1]};
-// }
-
-// console.log(add()(1,2,3));
 
 
-// const h={
-//     age:10,
-//     getAge:()=>{return this.age+=1}
 
-// }
 
-// h.getAge();
-// console.log(h.age)
+function add()
+{
+    return () => {return arguments[0]+arguments[1]};
+}
+
+console.log(add()(1,2,3));
+
+
+const h={
+    age:10,
+    getAge:()=>{return this.age+=1}
+
+}
+
+h.getAge();
+console.log(h.age)
