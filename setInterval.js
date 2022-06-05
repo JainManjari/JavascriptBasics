@@ -1,8 +1,14 @@
 var count=10;
 
-function timer()
+setTimeout(timer, 30, "settimeout");
+
+setTimeout(timer, 30, "settimeout");
+
+setTimeout(timer, 30, "settimeout");
+
+function timer(a)
 {
-    console.log(count);
+    console.log(count+" "+a);
     count--;
     if(count==0)
     {
@@ -12,4 +18,6 @@ function timer()
     }
 }
 
-var id=setInterval(timer,1000);
+var id=setInterval(timer,20, "setInterval");
+
+

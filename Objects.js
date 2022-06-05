@@ -5,6 +5,8 @@ console.log(obj);
 var obj2=new Object()
 console.log(obj2);
 
+console.log(obj === obj2) //false
+
 var std={
     name:"MJ",
     class:"12-X",
@@ -67,13 +69,13 @@ obj4["occuptaion"]="musician";
 
 console.log(obj3);
 
-console.log(obj3==obj4,obj3===obj4);
+console.log(obj3==obj4,obj3===obj4); //true, true
 
 var obj5={
     "name":"obj3"
 }
 
-console.log(obj5==obj3);
+console.log(obj5==obj3); // false
 
 
 //Difference btw arrays and objects
@@ -109,3 +111,30 @@ for(let j in ar)
 {
     console.log(j,ar[j]);
 }
+
+
+
+
+const h={
+    age:10,
+    getAge:()=>{
+        console.log("arrow func this "+ JSON.stringify(this) );
+        return this.age+=1
+    },
+    setAge: function(age) {
+        this.age=age
+    },
+    increaseAgeBy5: function() {
+        this.age=this.age+5;
+    }
+
+}
+
+h.getAge();
+console.log(h.age)
+h.setAge(93)
+console.log(h.age)
+h.increaseAgeBy5()
+console.log(h.age);
+
+

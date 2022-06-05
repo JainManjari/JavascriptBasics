@@ -28,7 +28,7 @@
 // function outer()
 // {
 //     var j=20;
-//     //console.log("outer ", i,j);
+//     console.log("outer ", i,j);
 //     var inner=function()
 //     {
 //         var k=30;
@@ -79,7 +79,7 @@
 // function outer()
 // {
 //     var j=20;
-//     //console.log("outer ", i,j);
+//     console.log("outer ", i,j);
 //     var inner=function()
 //     {
 //         var k=30;
@@ -105,7 +105,7 @@
 // function outer()
 // {
 //     var j=20;
-//     //console.log("outer ", i,j);
+//     console.log("outer ", i,j);
 //     var inner=function()
 //     {
 //         var k=30;
@@ -133,7 +133,7 @@ var i=10;
 function outer()
 {
     var j=20;
-    //console.log("outer ", i,j);
+    console.log("outer ", i,j);
     var inner=function()
     {
         var k=30;

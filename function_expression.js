@@ -29,20 +29,20 @@ console.log(opt(sub));
  //console.log(mul); => error
  console.log(mutliply(7,2));
 
-function ab(a,b,compute)
-{
-    return compute(a,b);
-}
-
 function multi(a,b)
 {
     return a*b;
 }
 
-console.log(ab(10,2,multi))
+function ab(a,b,compute)
+{
+    return compute(a,b);
+}
+
+console.log(ab(10,2,multi)) // normal func
 
 
-console.log(ab(10,2,mutliply))
+console.log(ab(10,2,mutliply)) // non anonymous
 
 
-console.log(ab(10,2,add))
+console.log(ab(10,2,add)) // anonymous

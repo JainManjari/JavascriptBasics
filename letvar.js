@@ -57,6 +57,18 @@ f();
 
 
 
+var x3=20;
+
+const test=function()
+{
+    console.log(x3); // error becuz cannot access x before initialization
+   let x3=21;
+}
+
+test();
+
+
+
 
 
 

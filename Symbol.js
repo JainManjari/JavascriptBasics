@@ -10,7 +10,7 @@ var sym2=Symbol("key1");
 
 console.log(sym1);
 console.log(sym1.description);
-console.log(sym1===sym2)
+console.log(sym1===sym2) //false
 
 
 /**

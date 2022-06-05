@@ -25,3 +25,17 @@ var p=new Person("Batman");
 // }
 
 // var p=new Person("Batman");
+
+
+
+
+// Whatever `this` is here...
+var chopper = {
+    owner: 'Zed',
+    getOwner: () => {
+        return this.owner;    // ...is what `this` is here.
+        // undefined
+    }
+};
+
+console.log("chopper "+chopper.getOwner());
