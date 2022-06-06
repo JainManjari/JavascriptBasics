@@ -24,14 +24,24 @@ printObjBind();
 Function.prototype.myBind2 = function(...args) {
 
     let obj = this;
-
-    return function() {
-        obj.call(args[0]);
+    let params = args.slice(1);
+    console.log("params" , params);
+    return function(...args2) {
+        console.log("args2 ", args2);
+        obj.apply(args[0], [...params, ...args2]);
     }
 
 }
 
 
-let printObjMyBind= printObj.myBind2(myObj);
+let printObj2 = function(...args) {
+    //console.log("printObj2 "+args);
+    console.log("printobj2 "+this.name+" "+this.work);
+    for (let ele of args) {
+        console.log(ele);
+    }
+}
 
-printObjMyBind();
+let printObj2MyBind= printObj2.myBind2(myObj, "p1","p2");
+
+printObj2MyBind("p3","p4");
